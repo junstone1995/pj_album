@@ -9,23 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentValue = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func hello(_ sender: Any) {
-        let alert = UIAlertController(title: "Hello", message: "My First App!!", preferredStyle: .alert)
+    @IBAction func showAlert(_ sender: Any) {
+        let message = "가격은 ₩\(currentValue) 입니다"
+        
+        let alert = UIAlertController(title: "Hello", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-    }
-    
-    @IBAction func BYE(_ sender: Any) {
-        let alert = UIAlertController(title: "bye" , message: "My First App bye", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alert.addAction(action);
-        present(alert, animated: true, completion: nil)
+        
+        let randomPrice = arc4random_uniform(100000) + 1
+        currentValue = Int(randomPrice)
     }
 }
 
