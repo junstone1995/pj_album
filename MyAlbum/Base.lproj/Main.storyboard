@@ -17,11 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b1-GA-5rg">
-                                <rect key="frame" x="172" y="407" width="46" height="30"/>
+                                <rect key="frame" x="178" y="407" width="35" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="1234"/>
                                 <connections>
                                     <action selector="hello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Boz-QA-xrd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-fc-RRf">
+                                <rect key="frame" x="177" y="553" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="5678"/>
+                                <connections>
+                                    <action selector="BYE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3E-RI-ePF"/>
                                 </connections>
                             </button>
                         </subviews>

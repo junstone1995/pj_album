@@ -21,5 +21,11 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func BYE(_ sender: Any) {
+        let alert = UIAlertController(title: "bye" , message: "My First App bye", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(action);
+        present(alert, animated: true, completion: nil)
+    }
 }
 
